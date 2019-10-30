@@ -21,7 +21,7 @@ export class ErrorsComponent implements OnInit, OnDestroy, OnChanges {
   formControlSubscription: Subscription;
   formControlErrors: FormControlError[];
 
-  constructor(private fceConfig: FormControlErrorsConfigService) { }
+  constructor(public fceConfig: FormControlErrorsConfigService) { }
 
   ngOnInit(): void {
     this.onlyFirst = false;
